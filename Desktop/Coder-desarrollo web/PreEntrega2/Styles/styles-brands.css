@@ -252,11 +252,10 @@ h4{
 }
 
 .container .card{
-    background-color: #333;
     width: 330px;
     height: 430px;
     border-radius: 8px;
-    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2) !important;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
     overflow: hidden;
     margin: 20px;
     text-align: center;
@@ -463,6 +462,28 @@ button:hover {
     text-transform: uppercase;
 }
 
+.sales-list{
+    font-size: 30px;
+}
+/* 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*/
 @media (min-width:320px) and (max-width:480px) {
 
 .paragraph{
@@ -612,6 +633,9 @@ button:hover {
     .steps span{
         font-size: 15px;
     }
+    .sales-list li{
+        font-size: 30px;
+    }
 }
 /*
 
@@ -649,6 +673,8 @@ button:hover {
     }
 
     .card {
+        background-color: #333;
+
         width: calc(33.33% - 20px); /* Ajusta el ancho de las tarjetas y agrega espaciado entre ellas */
         margin-right: 20px; /* Agrega margen derecho entre las tarjetas */
     }
@@ -765,5 +791,8 @@ button:hover {
     }
     .steps span{
         font-size: 15px;
+    }
+    .sales-list{
+        font-size: 10px;
     }
 }
