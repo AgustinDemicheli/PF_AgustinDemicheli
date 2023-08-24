@@ -128,6 +128,7 @@ p{
     list-style: none;
 }
 .div-list-team li{
+    word-wrap: break-word;
     margin: 10px;
     text-align: center;
     width:100%;
@@ -463,6 +464,36 @@ button:hover {
     text-transform: uppercase;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (min-width:320px) and (max-width:480px) {
 
 .paragraph{
@@ -546,15 +577,21 @@ button:hover {
         width: 100%; 
         margin-right: 15px;   
     }
-    .div-list-team li{
-        margin-right: 15px;
+    .div-list-team li {
+        margin-right: 20px !important;
         
 
     }
 
     .div-img-team{
-        width:300px;
+        width:250px;
         height: 200px;
+        margin-right: 20px;
+    }
+    .div-img-team img{
+        display: flex;
+        justify-content: center;
+        align-items:center;
     }
     .div-list-team i{
         margin-left: 0;
@@ -574,7 +611,7 @@ button:hover {
         font-size: 20px;
     }
     .div-img-team img{
-        width: 400px;
+        width: 250px;
     }
     .phrase{
         font-size:20px
