@@ -1,0 +1,45 @@
+// Estilos para el encabezado
+@import '../vars';
+.encabezado {
+    .navbar {
+      background-color: $navbar-bg-color !important;
+      
+      .container-fluid {
+        background-color: $navbar-bg-color !important;
+      }
+    }
+  
+    .top {
+      background-image: $top-bg-image;
+      width: 100%;
+      height: 700px;
+      background-size: cover;
+      
+      .top-text {
+        display: flex !important;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: $top-text-color;
+        height: 90vh;
+        font-size: 90px;
+      }
+    }
+  }
+
+  .top {
+    background-image: url(../media/sneakerboy.jpg);
+    width: 100%;
+    height: 700px;
+    background-size: cover;
+  
+    &-text {
+      display: flex !important;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: $top-text-color; // Reemplaza con tu variable de color principal
+      height: 90vh;
+      font-size: 90px;
+    }
+  }

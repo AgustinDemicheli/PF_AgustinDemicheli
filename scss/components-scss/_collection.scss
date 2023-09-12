@@ -1,0 +1,70 @@
+  @import '../vars';// Estilos para la sección collection
+  .collection {
+    margin-top: 100px;
+    width: 100%;
+    background-color: $navbar-bg-color;
+    height: 100px;
+  
+    .collection-title {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 40px;
+    }
+  }
+
+
+p{
+    color: aliceblue;
+}
+
+.container {
+
+    &{
+        width: 100%;
+        max-width: 1200px;
+        height: 430px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: auto;
+    }
+  .card {
+    background-color: $card-bg-color;
+    width: $card-width;
+    height: $card-height;
+    border-radius: $card-border-radius;
+    box-shadow: $card-box-shadow;
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s;
+
+    &:hover {
+      transform: $card-hover-transform;
+      box-shadow: $card-hover-box-shadow;
+    }
+
+    img {
+      width: $card-width;
+      height: 220px;
+    }
+
+    h4 {
+      font-weight: 600;
+      color:$top-text-color ;
+    }
+
+    p {
+      padding: 0 1rem;
+      font-size: 16px;
+      font-weight: 300;
+    }
+
+    a {
+      font-weight: 500;
+      text-decoration: none;
+      color: #3498db;
+    }
+  }
+}

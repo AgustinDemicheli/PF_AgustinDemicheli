@@ -1,0 +1,44 @@
+@import '../vars';
+.formulario {
+    max-width: 500px;
+    margin: 20px auto;
+    background-color: #f4ff80;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+  
+    label, input, textarea {
+      margin-bottom: 10px;
+      width: 100%;
+    }
+  
+    input, textarea {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+  
+    textarea {
+      resize: vertical;
+    }
+  
+    .one-input {
+      width: 100%;
+    }
+  
+    button {
+      padding: 10px 20px;
+      background-color: #000;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      align-self: flex-end;
+  
+      &:hover {
+        background-color: #45a049;
+      }
+    }
+  }

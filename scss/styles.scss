@@ -1,0 +1,674 @@
+// Variables
+@import './vars','./components-scss/collection','./components-scss/nav','./components-scss/footer','./components-scss/icons','./components-scss/team-card', './components-scss/header', './components-scss/formulario';
+
+body {
+    background-color: rgb(0, 0, 0);
+  }
+
+
+.phrase{
+    color: #f4ff80;
+    font-size: 40px;
+    text-align: center;
+}
+.paragraph{
+    font-size: 22px;
+    justify-self: auto;
+    padding: 20px;
+    margin-left: 60px;
+    margin-right: 60px;
+    text-align: center;
+}
+
+// Estilos para la sección screen-2
+.screen-2 {
+    background-image: url(../media/purpleshoes.jpg);
+    background-size: cover;
+    height: 500px;
+    color: $screen-title-color;
+    text-align: center;
+  
+    .screen-title {
+      font-size: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 80vh;
+    }
+  }
+  
+  // Estilos para la sección steps
+  .steps {
+    p {
+      font-size: 30px;
+      text-align: center;
+      margin: 20px;
+    }
+  
+    .list-steps {
+      list-style-type: none;
+      counter-reset: item;
+  
+      li {
+        position: relative;
+        padding-left: 30px;
+        margin-bottom: 10px;
+        font-size: 40px;
+  
+        i {
+          border: 2px solid $navbar-bg-color;
+          border-radius: 50%;
+          width: 60px;
+          height: 60px;
+          padding: 10px;
+          border: 3px solid $navbar-bg-color;
+          color: $navbar-bg-color;
+          text-align: center;
+          font-size: 30px;
+          margin-left: 30%;
+        }
+  
+        span {
+          color: $navbar-bg-color;
+        }
+      }
+    }
+  }
+  
+
+.informacion {
+    display: flex;
+    align-items: center;
+    color: $white-color; // Reemplaza con tu variable de color blanco
+    font-size: 26px;
+  
+    iframe.mapa-google {
+      margin-right: 20px;
+    }
+  
+    div {
+      ul {
+        list-style: none;
+        padding: 0;
+  
+        li {
+          margin-bottom: 10px;
+          i {
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+  
+    .container-informacion-li {
+      width: 50%;
+  
+      .informacion-list {
+        text-align: center;
+        margin-left: 60px;
+      }
+    }
+  }
+
+ 
+ 
+
+  @media (min-width:320px) and (max-width:480px) {
+
+    .paragraph{
+            font-size: 16px;
+        }
+    
+        main{
+            background-color: #000;
+            font-size: 20px;
+        }
+        .container {
+            margin-bottom: 1000px; /* Agrega margen inferior al contenedor principal */
+        }
+    
+        .card {
+            width: calc(33.33% - 20px); /* Ajusta el ancho de las tarjetas y agrega espaciado entre ellas */
+            margin-right: 20px; /* Agrega margen derecho entre las tarjetas */
+        }
+        .collection{
+            height: 60px;
+        }
+        .card:last-child {
+            margin-right: 0; /* Elimina el margen derecho de la última tarjeta para que no haya espacio extra */
+        }
+    
+        .top{
+            height: 400px;
+        }
+        .top-text{
+            font-size: 50px;
+            height: 65%;
+        }
+        .footer{
+            width: 100%;
+        }
+    
+        .informacion {
+            margin-top: 50px;
+            display: flex;
+            flex-direction: column; /* Esto hace que los elementos se apilen verticalmente */
+            align-items: center; /* Centra los elementos horizontalmente */
+            color: white;
+            font-size: 8px;
+        }
+        
+        .informacion iframe.mapa-google {
+            padding: 10px ;        
+            margin-bottom: 20px;
+            width: 250px; /* Espacio entre el mapa y la lista de información */
+        }
+        
+        .informacion div ul {
+            list-style: none;
+            padding: 0;
+            text-align: center; /* Centra el texto en la lista */
+        }
+        
+        .informacion div li {
+            margin-bottom: 10px;
+        }
+        .container-informacion-li span{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 15px;
+        }
+        .div-list-team span{
+            margin-right: 20px;
+            font-size: 10px;
+        }
+        .team-card{
+            height: 950px;
+            display: flex;
+            flex-direction: column;
+        }
+        .div-list-team {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding-left: 0; /* Elimina el relleno izquierdo */
+        
+            ul {
+              width: 100%;
+              padding-left: 0; /* Elimina el relleno izquierdo */
+              list-style: none;
+        
+              li {
+                margin-right: 0;
+                margin-bottom: 10px;
+                display: flex;
+                align-items: center;
+        
+                i {
+                  margin-left: 0;
+                  font-size: 20px;
+                  margin-right: 10px; /* Agrega margen derecho entre el ícono y el texto */
+                }
+                span {
+                    display: none; /* Oculta el texto */
+                  }
+              }
+            }
+        
+            #meet-us {
+              margin-top: 30px;
+              height: 30px !important; /* Ajusta la altura automáticamente */
+              font-size: 10px;
+              padding: 10px;
+        
+              a {
+                font-size: 20px;
+              }
+            }
+          }
+        
+        .div-img-team img{
+            width: 250px;
+        }
+        .phrase{
+            font-size:20px
+        }
+        footer{
+            width: 100%;
+        }
+        footer p{
+            font-size: 6px;
+        }
+        footer i{
+            font-size:15px
+        }
+        .steps{
+            width: 100%;
+        }
+        .steps p{
+            font-size: 15px;
+        }
+        .steps li{
+            width: 100%;
+            font-size: 15px;
+        }
+        .list-steps li i{
+            border: 1px solid #f4ff80;
+            border-radius:50%; 
+            width: 35px;
+            height: 35px;
+            border: 3px solid #f4ff80;
+            color: #f4ff80;
+            text-align: center;
+            font-size: 15px;
+            margin-left: 0;
+        }
+        .steps span{
+            font-size: 15px;
+        }
+    }
+  
+    @media (min-width:481px) and (max-width:768px) {
+    
+        .paragraph{
+            font-size: 16px;
+        }
+    
+        main{
+            background-color: #000;
+            font-size: 20px;
+        }
+        .container {
+            margin-bottom: 1000px; /* Agrega margen inferior al contenedor principal */
+        }
+    
+        .card {
+            width: calc(33.33% - 20px); /* Ajusta el ancho de las tarjetas y agrega espaciado entre ellas */
+            margin-right: 20px; /* Agrega margen derecho entre las tarjetas */
+        }
+    
+        .card:last-child {
+            margin-right: 0; /* Elimina el margen derecho de la última tarjeta para que no haya espacio extra */
+        }
+    
+        .top{
+            height: 400px;
+        }
+        .top-text{
+            font-size: 50px;
+            height: 65%;
+        }
+        .footer{
+            width: 100%;
+        }
+    
+        .informacion {
+            margin-top: 50px;
+            display: flex;
+            flex-direction: column; /* Esto hace que los elementos se apilen verticalmente */
+            align-items: center; /* Centra los elementos horizontalmente */
+            color: white;
+            font-size: 16px;
+        }
+        
+        .informacion iframe.mapa-google {
+            margin-bottom: 20px;
+            width: 300px; /* Espacio entre el mapa y la lista de información */
+        }
+        
+        .informacion div ul {
+            width: 70%;
+            list-style: none;
+            padding: 0;
+            text-align: center; /* Centra el texto en la lista */
+        }
+        
+        .informacion div li {
+            margin-bottom: 10px;
+        }
+        .div-list-team span {
+            margin-right: 10px; /* Elimina el margen derecho */
+            font-size: 10px;
+            display: inline; /* Evita que el texto se rompa en varias líneas */
+        }
+        
+        .team-card{
+            height: 950px;
+            display: flex;
+            flex-direction: column;
+        }
+        .div-list-team {
+            width: 100%;
+            display: flex;
+            flex-direction: column; /* Coloca los elementos uno debajo del otro */
+            align-items: flex-start; /* Alinea el contenido a la izquierda */
+            padding-left: 20px; /* Agrega un espacio a la izquierda para el texto */
+        }
+        .div-list-team ul {
+            width: 100%;
+            padding-left: 0; /* Elimina el relleno izquierdo de la lista */
+        }
+        .div-list-team li {
+            margin-right: 0; /* Elimina el margen derecho */
+            margin-bottom: 10px; /* Agrega un margen inferior para separar los elementos */
+        }
+    
+        .div-img-team{
+            width:300px;
+            height: 200px;
+        }
+        .div-list-team i{
+            margin-left: 0;
+            font-size: 20px;
+        }
+        #meet-us{
+            
+            margin-top: 100px !important;
+            height: 50px !important;
+            font-size: 10px;
+        }
+        #meet-us a{
+        display: flex;
+        
+        text-align: center;
+        justify-content: center;
+    }
+        .div-img-team img{
+            width: 400px;
+        }
+        .phrase{
+            font-size:30px
+        }
+        footer{
+            width: 100%;
+        }
+        footer p{
+            font-size: 10px;
+        }
+        footer i{
+            font-size:30px
+        }
+        .steps{
+            width: 100%;
+        }
+        .steps p{
+            font-size: 20px;
+        }
+        .steps li{
+            width: 100%;
+            font-size: 25px;
+        }
+        .steps span{
+            font-size: 15px;
+        }
+    }
+    
+    
+    @media (min-width:769px) and (max-width:1024px){
+    
+        .paragraph{
+            font-size: 16px;
+        }
+    
+        main{
+            background-color: #000;
+            font-size: 20px;
+        }
+        .container {
+            margin-bottom: 1000px; /* Agrega margen inferior al contenedor principal */
+        }
+    
+        .card {
+            width: calc(33.33% - 20px); /* Ajusta el ancho de las tarjetas y agrega espaciado entre ellas */
+            margin-right: 20px; /* Agrega margen derecho entre las tarjetas */
+        }
+    
+        .card:last-child {
+            margin-right: 0; /* Elimina el margen derecho de la última tarjeta para que no haya espacio extra */
+        }
+    
+        .top{
+            height: 400px;
+        }
+        .top-text{
+            font-size: 50px;
+            height: 65%;
+        }
+        .footer{
+            width: 100%;
+        }
+    
+        .informacion {
+            margin-top: 50px;
+            display: flex;
+            flex-direction: column; /* Esto hace que los elementos se apilen verticalmente */
+            align-items: center; /* Centra los elementos horizontalmente */
+            color: white;
+            font-size: 16px;
+        }
+        
+        .informacion iframe.mapa-google {
+            margin-bottom: 20px;
+            width: 300px; /* Espacio entre el mapa y la lista de información */
+        }
+        
+        .informacion div ul {
+            width: 70%;
+            list-style: none;
+            padding: 0;
+            text-align: center; /* Centra el texto en la lista */
+        }
+        
+        .informacion div li {
+            margin-bottom: 10px;
+        }
+        .div-list-team span {
+            margin-right: 10px; /* Elimina el margen derecho */
+            font-size: 10px;
+            display: inline; /* Evita que el texto se rompa en varias líneas */
+        }
+        
+        .team-card{
+            height: 950px;
+            display: flex;
+            flex-direction: column;
+        }
+        .div-list-team {
+            width: 100%;
+            display: flex;
+            flex-direction: column; /* Coloca los elementos uno debajo del otro */
+            align-items: flex-start; /* Alinea el contenido a la izquierda */
+            padding-left: 20px; /* Agrega un espacio a la izquierda para el texto */
+        }
+        .div-list-team ul {
+            width: 100%;
+            padding-left: 0; /* Elimina el relleno izquierdo de la lista */
+        }
+        .div-list-team li {
+            margin-right: 0; /* Elimina el margen derecho */
+            margin-bottom: 10px; /* Agrega un margen inferior para separar los elementos */
+        }
+    
+        .div-img-team{
+            width:300px;
+            height: 200px;
+        }
+        .div-list-team i{
+            margin-left: 0;
+            font-size: 20px;
+        }
+        #meet-us{
+            
+            margin-top: 30px;
+            height: 50px !important;
+            font-size: 10px;
+        }
+        #meet-us a{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+    }
+        .div-img-team img{
+            width: 400px;
+        }
+        .phrase{
+            font-size:20px
+        }
+        footer{
+            width: 100%;
+        }
+        footer p{
+            font-size: 10px;
+        }
+        footer i{
+            font-size:30px
+        }
+        .steps{
+            width: 100%;
+        }
+        .steps p{
+            font-size: 20px;
+        }
+        .steps li{
+            width: 100%;
+            font-size: 25px;
+        }
+        .steps span{
+            font-size: 15px;
+        }
+    }
+    
+  
+  @media (min-width:1025px) and (max-width:1200px){
+    .paragraph{
+        font-size: 16px;
+    }
+
+    main{
+        background-color: #000;
+        font-size: 20px;
+    }
+    .container {
+        margin-bottom: 1000px; /* Agrega margen inferior al contenedor principal */
+    }
+
+    .card {
+        width: calc(33.33% - 20px); /* Ajusta el ancho de las tarjetas y agrega espaciado entre ellas */
+        margin-right: 20px; /* Agrega margen derecho entre las tarjetas */
+    }
+
+    .card:last-child {
+        margin-right: 0; /* Elimina el margen derecho de la última tarjeta para que no haya espacio extra */
+    }
+
+    .top{
+        height: 400px;
+    }
+    .top-text{
+        font-size: 50px;
+        height: 65%;
+    }
+    .footer{
+        width: 100%;
+    }
+
+    .informacion {
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column; /* Esto hace que los elementos se apilen verticalmente */
+        align-items: center; /* Centra los elementos horizontalmente */
+        color: white;
+        font-size: 16px;
+    }
+    
+    .informacion iframe.mapa-google {
+        margin-bottom: 20px;
+        width: 300px; /* Espacio entre el mapa y la lista de información */
+    }
+    
+    .informacion div ul {
+        width: 70%;
+        list-style: none;
+        padding: 0;
+        text-align: center; /* Centra el texto en la lista */
+    }
+    
+    .informacion div li {
+        margin-bottom: 10px;
+    }
+    .div-list-team span {
+        margin-right: 10px; /* Elimina el margen derecho */
+        font-size: 20px;
+        display: inline; /* Evita que el texto se rompa en varias líneas */
+    }
+    
+    .team-card{
+        height: 950px;
+        display: flex;
+        flex-direction: column;
+    }
+    .div-list-team {
+        width: 100%;
+        display: flex;
+        flex-direction: column; /* Coloca los elementos uno debajo del otro */
+        align-items: flex-start; /* Alinea el contenido a la izquierda */
+        padding-left: 20px; /* Agrega un espacio a la izquierda para el texto */
+    }
+    .div-list-team ul {
+        width: 100%;
+        padding-left: 0; /* Elimina el relleno izquierdo de la lista */
+    }
+    .div-list-team li {
+        margin-right: 0; /* Elimina el margen derecho */
+        margin-bottom: 10px; /* Agrega un margen inferior para separar los elementos */
+    }
+
+    .div-img-team{
+        width:300px;
+        height: 200px;
+    }
+    .div-list-team i{
+        margin-left: 0;
+        font-size: 20px;
+    }
+    #meet-us{
+        
+        margin-top: 30px;
+        height: 50px !important;
+        font-size: 10px;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .div-img-team img{
+        width: 400px;
+    }
+    .phrase{
+        font-size:20px
+    }
+    footer{
+        width: 100%;
+    }
+    footer p{
+        font-size: 10px;
+    }
+    footer i{
+        font-size:30px
+    }
+    .steps{
+        width: 100%;
+    }
+    .steps p{
+        font-size: 20px;
+    }
+    .steps li{
+        width: 100%;
+        font-size: 25px;
+    }
+    .steps span{
+        font-size: 15px;
+    }
+}

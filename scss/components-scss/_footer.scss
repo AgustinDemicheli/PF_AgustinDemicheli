@@ -1,0 +1,33 @@
+@import '../vars';
+.footer {
+    width: 100%;
+    background-color: $navbar-bg-color;
+    color: $black;
+    text-align: center;
+    font-size: $footer-font-size;
+    padding: $footer-padding;
+    bottom: 0;
+    left: 0;
+    p {
+      color: $black;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    #Rights {
+      float: left;
+      margin-top: $footer-margin-top;
+    }
+    #author {
+      float: right;
+      margin-top: $footer-margin-top;
+    }
+    &-list {
+      list-style: none;
+      height: 50px;
+      li {
+        display: inline-block;
+        text-align: center;
+        margin-right: 10px; /* Espacio entre los elementos de la lista */
+        font-size: 40px;
+      }
+    }
+  }
