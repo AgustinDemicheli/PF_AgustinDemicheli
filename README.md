@@ -1,3 +1,4 @@
-# 3_PreEntrega_Demicheli.github.io
+# DK_Shoes.github.io
 
-TERCER PREENTREGA
+Entrega final Desarrollo web 
+Author : Agustin Demicheli
